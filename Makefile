@@ -35,7 +35,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = SolidCube1.0.0
-DISTDIR = /home/peter/Projects/Graphics/cube_with_light/.tmp/SolidCube1.0.0
+DISTDIR = /home/peter/projects/Graphics/graphics-project2/.tmp/SolidCube1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -lGLU -lglut -lQt5OpenGL -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread 
@@ -372,7 +372,7 @@ moc_SolidCubeWindow.cpp: SolidCubeWidget.h \
 		SolidCubeWindow.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/peter/Projects/Graphics/cube_with_light -I/home/peter/Projects/Graphics/cube_with_light -I/opt/local/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SolidCubeWindow.h -o moc_SolidCubeWindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include ./moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/peter/projects/Graphics/graphics-project2 -I/home/peter/projects/Graphics/graphics-project2 -I/opt/local/include -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtOpenGL -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include SolidCubeWindow.h -o moc_SolidCubeWindow.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:

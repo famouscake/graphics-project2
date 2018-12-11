@@ -24,6 +24,8 @@ class SolidCubeWidget: public QGLWidget
 	private:
 
 	void cube();
+        void coordinateSystem();
+        void maySpheres();
 	void polygon(int, int, int, int);
 
 	}; // class GLPolygonWidget

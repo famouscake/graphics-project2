@@ -32,7 +32,7 @@ SolidCubeWindow::SolidCubeWindow(QWidget *parent)
 
 
     QTimer *timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, cubeWidget, [=](){ cubeWidget->angle += 0.01; cubeWidget->update();});
+    connect(timer, &QTimer::timeout, cubeWidget, [=](){ cubeWidget->angle += 0.1; cubeWidget->update();});
     timer->start(1);
 
 
@@ -52,6 +52,7 @@ SolidCubeWindow::~SolidCubeWindow()
 // resets all the interface elements
 void SolidCubeWindow::ResetInterface()
 { // ResetInterface()
+
     nVerticesSlider->setMinimum(3);
     nVerticesSlider->setMaximum(30);
 
